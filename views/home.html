@@ -1,0 +1,25 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-6" ng-repeat="evento in ::listadoEventos | orderBy:'startDate':true">
+      <div class="itemBox">
+        <div class="innerSpace">
+          <a class="title" href="event/{{::evento.id}}">{{::evento.title}}</a>
+          <a class="subtitle" href="event/{{::evento.id}}">{{::evento.subtitle}}</a>
+        </div>
+        <!-- evento.place -->
+        <a href="event/{{::evento.id}}" class="image">
+          <img ng-src="/testjs/{{evento.image}}" alt="img: {{::evento.title}}" width="100%">
+        </a>
+        <div class="innerSpace">
+          <p class="fechas">
+            {{::evento.startDate | date:'dd/MM/yyyy'}} - {{::evento.endDate | date:'dd/MM/yyyy'}}
+          </p>
+          <p class="descripcio hidden-xs hidden-sm" ng-bind-html="::evento.description"></p>
+        </div>
+        <a href="event/{{::evento.id}}" class="btnBuy">
+          Comprar
+        </a>
+      </div>
+    </div>
+  </div>
+</div>

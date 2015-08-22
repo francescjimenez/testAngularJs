@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+	
+	<link rel="stylesheet" href="/testjs/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/testjs/css/style.css">
+    <!-- 
+    He optado por hacerlo directamente en JS
+    <title>{{ Page.title() }}</title>
+    --> 
+  </head>
+  <body ng-app="superApp">
+    
+    <div class="container-fluid headerBox">
+      <div class="row">
+        <div class="col-md-12">
+          <h4 class="titleHeader">HEADER</h4>
+        </div>
+      </div>
+    </div>
+    
+    <div ui-view></div>
+    
+    <script src="/testjs/node_modules/angularjs/angular.min.js"></script>
+    <script src="/testjs/node_modules/angularjs/angular-sanitize.js"></script>
+    <script src="/testjs/node_modules/angular-ui/angular-ui-router.min.js"></script>
+    
+    
+    <script src="/testjs/js/app.js"></script>
+    <script src="/testjs/js/controllers/controllerEvents.js"></script>
+    <script src="/testjs/js/services/services.js"></script>
+    <script src="/testjs/js/directives/shopping-cart.js"></script>
+    
+  </body>
+</html>

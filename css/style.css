@@ -1,0 +1,59 @@
+body{ font-family: helvetica; color:#222;}
+
+
+/* HEADER */
+.headerBox{ background-color:#87ceeb; box-shadow: 0px 5px 45px 0px rgba(0,0,0,0.75); margin:0 0 30px 0;}
+.titleHeader{  text-align: center; margin:30px 0 30px 0; padding:0;}
+
+/* HOME */
+.itemBox{ border:#acaaca 1px solid; margin-bottom: 30px;}
+.itemBox .innerSpace{ padding:0 10px 0 10px; margin-top:10px;}
+.itemBox .title{ color:#008cba; font-size: 14px; font-weight: bold; display: block;}
+.itemBox .title:hover{ text-decoration: none; color:#87ceeb;}
+.itemBox .subtitle{ color:#008cba; font-size:12px; display: block; margin-bottom: 10px}
+.itemBox .image:hover img{
+  -webkit-filter: grayscale(100%);
+  -moz-filter: grayscale(100%);
+  -ms-filter: grayscale(100%);
+  -o-filter: grayscale(100%);
+  filter: grayscale(100%);
+  filter: url(grayscale.svg); /* Firefox 4+ */
+  filter: gray; /* IE 6-9 */
+}
+.itemBox .fechas{ font-size: 10px;}
+.itemBox .descripcio{ font-size: 12px; margin-bottom: 10px; height:60px; overflow: hidden;}
+.itemBox .btnBuy{ font-size: 14px; text-align: center; display: block; background-color: #008cba; width:100%; padding:15px 0 15px 0; color:#FFF;}
+.itemBox .btnBuy:hover{ background-color:#87ceeb; text-decoration: none;}
+
+
+/* EVENT */
+.right{ text-align: right;}
+.linkVolver{ color:#87ceeb;}
+.errorMsg{ font-weight: bold; margin: 0; padding:15px 0 15px 0; text-align: center;}
+.itemBuy{ border:#acaaca 1px solid; overflow: hidden; padding: 10px; margin-bottom: 30px}
+.itemBuy .title{ padding:0; margin:0;}
+.itemBuy .listDisp{ list-style: none; padding-left: 10px}
+.itemBuy .listDisp LI{ padding-bottom: 40px;}
+.itemBuy .listDisp .left{ text-align: left; display: block; width: 70%; float: left;}
+.itemBuy .listDisp .right{ text-align: right; display: block; width: 29%; float: right;}
+.itemBuy .listDisp .buttons{ color:#87ceeb; font-weight: bold; font-size: 16px; cursor: pointer;}
+.itemBuy .listDisp .buttons:hover{ color:#008cba; }
+.itemBuy .listDisp .buttons.neg{ color:#000; cursor:not-allowed;}
+
+
+/* CSS DEL CARRITO DE COMPRA */
+.cart .title{ font-size: 16px; margin-bottom: 5px}
+.cart .listCart{ list-style: none; padding-left: 0; margin-bottom: 25px;}
+.cart .listCart LI{ overflow: hidden;}
+.cart .listCart .date{ padding-top:3px; display: block; width: 100px; float:left; }
+.cart .listCart .count{ padding-top: 3px; display: block; float:right; }
+.cart .listCart .trash{ display:block; background: url('/testjs/assets/img/trash.png') no-repeat; width: 24px; height:24px; float:right; margin-left: 30px;}
+.cart .listCart .trash:hover{ cursor:pointer;
+  -webkit-filter: grayscale(100%);
+  -moz-filter: grayscale(100%);
+  -ms-filter: grayscale(100%);
+  -o-filter: grayscale(100%);
+  filter: grayscale(100%);
+  filter: url(grayscale.svg); /* Firefox 4+ */
+  filter: gray; /* IE 6-9 */
+}
